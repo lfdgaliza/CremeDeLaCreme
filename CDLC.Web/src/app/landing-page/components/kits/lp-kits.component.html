@@ -1,0 +1,22 @@
+﻿<section class="kits">
+
+  <div class="auto-sized">
+    <div class="title">
+      <div class="title-bar header"><span class="title-bar line"></span></div>
+      <div class="title-bar text">Escolha seu Kit</div>
+      <div class="title-bar header"><span class="title-bar line"></span></div>
+    </div>
+
+    
+      <div *ngFor="let kit of kits" class="kit" [style.backgroundColor]="kit.colour">
+        <img src="/assets/img/kits/icons/{{kit.iconPath}}" />
+        <button>Saiba Mais</button>
+      </div>
+    
+
+    <div class="title-bar footer">
+      <span class="title-bar line"></span>
+    </div>
+
+  </div>
+</section>

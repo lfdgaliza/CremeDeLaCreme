@@ -1,0 +1,97 @@
+﻿.separator {
+    display: flex;
+}
+
+.separator>div {
+    display: inline-block;
+    height: 10px;
+    width: 33%;
+}
+
+.separator .a {
+    background-color: #ee4a5e;
+}
+
+.separator .b {
+    background-color: #2ebdbd;
+    width: 34%;
+}
+
+.separator .c {
+    background-color: #fab517;
+}
+.menu > nav,
+.menu-heigth {
+  height: 50px;
+}
+
+.menu > nav {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.menu > nav > ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.menu img {
+    vertical-align: middle;
+}
+
+.menu li {
+    display: inline-block;
+    color: black;
+    opacity: 1;
+    margin: 0 15px 0 15px;
+}
+
+.menu button {
+    line-height: 50px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.menu > nav > ul li:last-child {
+    margin-left: 0px;
+}
+
+.menu > nav > ul li *:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.menu > nav > ul li *:active {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.menu-container.floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.menu-container.floating nav {
+    background: rgba(255, 255, 255, .97);
+}
+
+.hidden {
+  height: 1px;
+}
+
+.mobile-menu {
+    display: none !important;
+}
+
+.menu .social img:last-child {
+    margin-left: 15px;
+}

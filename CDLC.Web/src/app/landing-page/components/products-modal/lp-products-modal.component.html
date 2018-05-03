@@ -1,0 +1,23 @@
+﻿<section class="products-modal">
+    <div class="modal">
+        <div class="close-modal" (click)="fecharModal()">
+            (X) fechar
+        </div>
+        <img src="/assets/img/products-modal/top.jpg" />
+        <div class="modal-body">
+            <span class="modal-title">
+                Uma variedade de delícias para você
+            </span>
+            <ul>
+                <li *ngFor="let product of products">
+                    {{product.name}}
+                    <ul>
+                        <li class="second" *ngFor="let subProduct of product.childreen">
+                            {{subProduct}}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

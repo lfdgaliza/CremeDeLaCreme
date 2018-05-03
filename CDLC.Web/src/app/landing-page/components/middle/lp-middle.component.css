@@ -1,0 +1,25 @@
+.middle {
+    text-align: center;
+    background: url('/assets/img/bg-pattern-light.png');
+    width: 100%;
+}
+
+.middle>div {
+    padding: 50px;
+}
+
+.presentation {
+    max-width: 550px;
+    display: inline-block;
+    padding: 0 50px 0 50px;
+}
+
+.cdlc-theme {
+    width: 90%;
+    max-width: 400px;
+}
+
+.cdlc-all {
+    width: 85%;
+    max-width: 300px;
+}

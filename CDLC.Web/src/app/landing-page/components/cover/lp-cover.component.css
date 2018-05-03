@@ -1,0 +1,32 @@
+﻿.cover {
+  position: relative;
+}
+
+.cover-img {
+  width: 100%;
+  display: block;
+}
+
+.arrows {
+  position: absolute;
+  left: 50%;
+  margin-left: -3.5%;
+  bottom: 7%;
+  width: 7%;
+  border: none;
+  background: none;
+}
+
+.arrows:hover {
+   cursor: pointer;
+}
+
+.arrows img {
+  width: 100%;
+  opacity: .8;
+}
+
+.arrows:hover img {
+  opacity: 1;
+ 
+}

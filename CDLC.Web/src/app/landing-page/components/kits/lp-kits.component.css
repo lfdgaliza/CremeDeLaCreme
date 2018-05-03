@@ -1,0 +1,40 @@
+﻿.kits {
+  text-align: center;
+}
+
+.auto-sized {
+  display: inline-block;
+}
+
+.kit {
+  padding-top: 30px;
+  padding: 30px 10px 30px 10px;
+  display: inline-block;
+  height: 70%;
+  width: 15%;
+  text-align: center;
+  max-height: 200px;
+  max-width: 100px;
+  min-width: 80px;
+}
+
+  .kit img {
+    width: 70%;
+  }
+
+  .kit button {
+    margin-top: 30px;
+    display: block;
+    border: 1px solid #aaa;
+    background-color: #ddd;
+    color: #333;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .kit button:hover {
+    background-color: #ccc;
+  }

@@ -1,0 +1,18 @@
+﻿<section class="products">
+    <div class="products-container">
+        <div class="title">
+            <div class="title-bar header"><span class="title-bar line"></span></div>
+            <div class="title-bar text">Conheça nossos produtos</div>
+            <div class="title-bar header"><span class="title-bar line"></span></div>
+        </div>
+        <div class="product" *ngFor="let product of products">
+            <img src="/assets/img/products/tn/{{product.fileThumbName}}" />
+            <span class="product-label">{{product.name}}</span>
+        </div>
+        <div class="title-bar footer">
+            <span class="title-bar line"></span>
+        </div>
+        <button class="btn-menu-completo" (click)="mostrarModalProdutos()">Ver menu completo</button>
+    </div>
+</section>
+<cdlc-lp-products-modal *ngIf="showDialog" (closeDialog)="closeDialog()"></cdlc-lp-products-modal>

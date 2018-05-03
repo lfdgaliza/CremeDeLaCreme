@@ -1,0 +1,21 @@
+.wwh {
+    background-color: #3f2111;
+    text-align: center;
+}
+
+.wwh .img-bunch {
+    max-width: 800px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.wwh .img-container {
+    width: 200px;
+    height: 100px;
+    display: inline-flex;
+}
+
+.wwh .img-container>img {
+    margin: auto;
+}

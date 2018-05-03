@@ -1,0 +1,39 @@
+﻿<div class="menu-container" [class.floating]="isFixed" [class.document-width]="isFixed">
+  <div class="separator">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+  </div>
+  <section class="menu" [class.active]="isActive">
+    <nav>
+      <ul>
+        <li class="mobile-menu">
+          <button (click)="btnMenu_Click()">Menu</button>
+        </li>
+        <li class="mini-logo">
+          <button scrollTo="cover" (click)="closeMenu()">
+            <img src="/assets/img/menu/cdlc-logo-small.png" />
+          </button>
+        </li>
+        <li><button scrollTo="middle" offset="60" (click)="closeMenu()">quem somos</button></li>
+        <li><button scrollTo="kits" offset="70" (click)="closeMenu()">kits</button></li>
+        <li><button scrollTo="products" offset="60" (click)="closeMenu()">produtos</button></li>
+        <li><button scrollTo="contact" offset="60" (click)="closeMenu()">contato</button></li>
+        <li class="social">
+          <button>
+            <a href="https://www.facebook.com/Cremedelacremebuffet/" target="_blank">
+              <img src="/assets/img/menu/fb-logo.png" />
+            </a>
+          </button>
+          <button>
+            <a href="https://www.instagram.com/cremedelacremepe/" target="_blank">
+              <img src="/assets/img/menu/insta-logo.png" />
+            </a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</div>
+<div class="menu-heigth" [class.hidden]="!isFixed" [componentHeight]="60" fix-on-top (visibilityChangedByScroll)="getVisibilityMenu($event)">
+</div>
